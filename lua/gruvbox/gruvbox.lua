@@ -40,7 +40,7 @@ M.setup = function()
   vim.g.terminal_color_3 = colors.dyellow
   vim.g.terminal_color_11 = colors.yellow
   vim.g.terminal_color_4 = colors.dblue
-  vim.g.terminal_color_12 = colors.blue
+  vim.g.terminal_color_12 = colors.dblue
   vim.g.terminal_color_5 = colors.dpurple
   vim.g.terminal_color_13 = colors.purple
   vim.g.terminal_color_6 = colors.daqua
@@ -67,8 +67,8 @@ M.setup = function()
     GruvboxGreenBold = { fg = colors.green, bold = config.bold },
     GruvboxYellow = { fg = colors.yellow },
     GruvboxYellowBold = { fg = colors.yellow, bold = config.bold },
-    GruvboxBlue = { fg = colors.blue },
-    GruvboxBlueBold = { fg = colors.blue, bold = config.bold },
+    GruvboxBlue = { fg = colors.dblue },
+    GruvboxBlueBold = { fg = colors.dblue, bold = config.bold },
     GruvboxPurple = { fg = colors.purple },
     GruvboxPurpleBold = { fg = colors.purple, bold = config.bold },
     GruvboxAqua = { fg = colors.aqua },
@@ -81,8 +81,8 @@ M.setup = function()
         or { fg = colors.green, reverse = config.invert_signs },
     GruvboxYellowSign = config.transparent_mode and { fg = colors.yellow, reverse = config.invert_signs }
         or { fg = colors.yellow, reverse = config.invert_signs },
-    GruvboxBlueSign = config.transparent_mode and { fg = colors.blue, reverse = config.invert_signs }
-        or { fg = colors.blue2, reverse = config.invert_signs },
+    GruvboxBlueSign = config.transparent_mode and { fg = colors.dblue, reverse = config.invert_signs }
+        or { fg = colors.dblue2, reverse = config.invert_signs },
     GruvboxPurpleSign = config.transparent_mode and { fg = colors.purple, reverse = config.invert_signs }
         or { fg = colors.purple, reverse = config.invert_signs },
     GruvboxAquaSign = config.transparent_mode and { fg = colors.aqua, reverse = config.invert_signs }
@@ -92,7 +92,7 @@ M.setup = function()
     GruvboxRedUnderline = { undercurl = config.undercurl, sp = colors.red },
     GruvboxGreenUnderline = { undercurl = config.undercurl, sp = colors.green },
     GruvboxYellowUnderline = { undercurl = config.undercurl, sp = colors.yellow },
-    GruvboxBlueUnderline = { undercurl = config.undercurl, sp = colors.blue },
+    GruvboxBlueUnderline = { undercurl = config.undercurl, sp = colors.dblue },
     GruvboxPurpleUnderline = { undercurl = config.undercurl, sp = colors.purple },
     GruvboxAquaUnderline = { undercurl = config.undercurl, sp = colors.aqua },
     GruvboxOrangeUnderline = { undercurl = config.undercurl, sp = colors.orange },
@@ -106,7 +106,7 @@ M.setup = function()
     TabLine = { fg = colors.bg1, bg = colors.bg0, bold = config.bold },
     MatchParen = { bg = colors.bg3, bold = config.bold },
     ColorColumn = { bg = colors.bg1 },
-    Conceal = { fg = colors.blue },
+    Conceal = { fg = colors.dblue },
     CursorLineNr = { fg = colors.yellow, bg = colors.bg1 },
     NonText = { link = "GruvboxBg2" },
     SpecialKey = { link = "GruvboxFg4" },
@@ -117,13 +117,13 @@ M.setup = function()
     IncSearch = { fg = colors.orange, bg = colors.bg0, reverse = config.inverse },
     CurSearch = { link = "IncSearch" },
     QuickFixLine = { fg = colors.bg0, bg = colors.yellow, bold = config.bold },
-    Underlined = { fg = colors.blue, underline = config.underline },
+    Underlined = { fg = colors.dblue, underline = config.underline },
     StatusLine = { fg = colors.bg2, bg = colors.fg0, reverse = config.inverse },
     StatusLineNC = { fg = colors.bg1, bg = colors.fg4, reverse = config.inverse },
     WinBar = { fg = colors.fg4, bg = colors.bg0 },
     WinBarNC = { fg = colors.fg3, bg = colors.bg1 },
     WinSeparator = config.transparent_mode and { fg = colors.bg3, bg = nil } or { fg = colors.bg3, bg = colors.bg0 },
-    WildMenu = { fg = colors.blue, bg = colors.bg2, bold = config.bold },
+    WildMenu = { fg = colors.dblue, bg = colors.bg2, bold = config.bold },
     FloatWindow = { fg = colors.bg3, bg = colors.bg0 },
     Directory = { link = "GruvboxBlueBold" },
     Title = { link = "GruvboxGreenBold" },
@@ -172,7 +172,7 @@ M.setup = function()
     Structure = { link = "GruvboxAqua" },
     Typedef = { link = "GruvboxYellow" },
     --Pmenu = { fg = colors.fg1, bg = colors.bg2 },
-    --PmenuSel = { fg = colors.bg2, bg = colors.blue, bold = config.bold },
+    --PmenuSel = { fg = colors.bg2, bg = colors.dblue, bold = config.bold },
     PmenuSbar = { bg = colors.bg2 },
     PmenuThumb = { bg = colors.bg4 },
     DiffDelete = { fg = colors.red, bg = colors.bg0, reverse = config.inverse },
@@ -945,7 +945,7 @@ M.setup = function()
     LspSagaCodeActionContent = { fg = colors.green, bold = config.bold },
     LspSagaLspFinderBorder = { link = "GruvboxFg1" },
     LspSagaAutoPreview = { link = "GruvboxOrange" },
-    TargetWord = { fg = colors.blue, bold = config.bold },
+    TargetWord = { fg = colors.dblue, bold = config.bold },
     FinderSeparator = { link = "GruvboxAqua" },
     LspSagaDefPreviewBorder = { link = "GruvboxBlue" },
     LspSagaHoverBorder = { link = "GruvboxOrange" },
@@ -963,8 +963,8 @@ M.setup = function()
     DashboardFooter = { fg = colors.purple, italic = true },
     -- mason
     MasonHighlight = { link = "GruvboxAqua" },
-    MasonHighlightBlock = { fg = colors.bg0, bg = colors.blue },
-    MasonHighlightBlockBold = { fg = colors.bg0, bg = colors.blue, bold = true },
+    MasonHighlightBlock = { fg = colors.bg0, bg = colors.dblue },
+    MasonHighlightBlockBold = { fg = colors.bg0, bg = colors.dblue, bold = true },
     MasonHighlightSecondary = { fg = colors.yellow },
     MasonHighlightBlockSecondary = { fg = colors.bg0, bg = colors.yellow },
     MasonHighlightBlockBoldSecondary = { fg = colors.bg0, bg = colors.yellow, bold = true },
@@ -1006,12 +1006,12 @@ M.setup = function()
     TSRainbowOrange = { fg = colors.orange },
     TSRainbowYellow = { fg = colors.yellow },
     TSRainbowGreen = { fg = colors.green },
-    TSRainbowBlue = { fg = colors.blue },
+    TSRainbowBlue = { fg = colors.dblue },
     TSRainbowViolet = { fg = colors.purple },
     TSRainbowCyan = { fg = colors.cyan },
     -- translator
     TranslatorBorder = { link = "FloatWindow" },
-    BufferLineIndicatorSelected = { fg = colors.blue2 },
+    BufferLineIndicatorSelected = { fg = colors.dblue2 },
   }
 
   for group, hl in pairs(config.overrides) do
