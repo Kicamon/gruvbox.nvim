@@ -121,7 +121,7 @@ M.setcolor = function()
     StatusLine = { fg = colors.bg2, bg = colors.fg0, reverse = config.inverse },
     StatusLineNC = { fg = colors.bg1, bg = colors.fg4, reverse = config.inverse },
     WinBar = { fg = colors.fg4, bg = colors.bg0 },
-    WinBarNC = { fg = colors.fg3, bg = colors.bg1 },
+    WinBarNC = { fg = colors.fg3, bg = colors.bg0 },
     WinSeparator = config.transparent_mode and { fg = colors.bg3, bg = nil } or { fg = colors.bg3, bg = colors.bg0 },
     WildMenu = { fg = colors.dblue, bg = colors.bg2, bold = config.bold },
     FloatWindow = { fg = colors.bg3, bg = colors.bg0 },
