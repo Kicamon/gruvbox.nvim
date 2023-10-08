@@ -10,9 +10,8 @@ local colors = {
   fg2       = "#d5c4a1",
   fg3       = "#bdae93",
   fg4       = "#a89984",
-  red       = "#fb4934",
+  red       = "#ff461f", -- 朱砂色
   dred      = "#cc241d",
-  vermilion = "#ff461f", -- 朱砂色
   green     = "#b8bb26",
   lgreen    = "#afd787",
   dgreen    = "#98971a",
@@ -95,8 +94,6 @@ M.setcolor = function()
         or { fg = colors.aqua, reverse = config.invert_signs },
     GruvboxOrangeSign = config.transparent_mode and { fg = colors.orange, reverse = config.invert_signs }
         or { fg = colors.orange, reverse = config.invert_signs },
-    GruvboxVermilionSign = config.transparent_mode and { fg = colors.vermilion, reverse = config.invert_signs }
-        or { fg = colors.vermilion, reverse = config.invert_signs },
     GruvboxCyanSign = config.transparent_mode and { fg = colors.cyan, reverse = config.invert_signs }
         or { fg = colors.cyan, reverse = config.invert_signs },
     GruvboxRedUnderline = { undercurl = config.undercurl, sp = colors.red },
@@ -467,10 +464,10 @@ M.setcolor = function()
     gitcommitSelectedFile = { link = "GruvboxGreen" },
     gitcommitDiscardedFile = { link = "GruvboxRed" },
     -- gitsigns.nvim
-    GitSignsAdd = { link = "GruvboxVermilionSign" },
+    GitSignsAdd = { link = "GruvboxRedSign" },
     GitSignsChange = { link = "GruvboxCyanSign" },
     GitSignsDelete = { link = "GruvboxGreenSign" },
-    GitSignsAddLn = { link = "GruvboxVermilionSign" },
+    GitSignsAddLn = { link = "GruvboxRedSign" },
     GitSignsChangeLn = { link = "GruvboxCyanSign" },
     GitSignsDeleteLn = { link = "GruvboxGreenSign" },
     -- termdebug
