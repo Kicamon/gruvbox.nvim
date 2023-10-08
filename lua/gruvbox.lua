@@ -125,6 +125,7 @@ M.setcolor = function()
     StatusLineNC = { fg = colors.bg0, bg = colors.bg0, reverse = config.inverse },
     StatusLineGreen = { fg = colors.lgreen },
     StatusLineBlue = { fg = colors.blue },
+    StatusLineYellow = { fg = colors.yellow },
     WinBar = { fg = colors.fg4, bg = colors.bg0 },
     WinBarNC = { fg = colors.fg3, bg = colors.bg0 },
     WinSeparator = config.transparent_mode and { fg = colors.bg3, bg = nil } or { fg = colors.bg3, bg = colors.bg0 },
