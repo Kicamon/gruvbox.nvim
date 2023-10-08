@@ -125,7 +125,7 @@ M.setcolor = function()
     StatusLineNC = { fg = colors.bg0, bg = colors.bg0, reverse = config.inverse },
     StatusLineMode = { fg = colors.lgreen },
     StatusLineFile = { fg = colors.blue },
-    StatusLineBranch = { fg = colors.violet },
+    StatusLineBranch = { fg = colors.blue },
     StatuslineNum = { fg = colors.lgreen },
     StatuslineEncodeing = { fg = colors.lgreen },
     WinBar = { fg = colors.fg4, bg = colors.bg0 },
