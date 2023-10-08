@@ -133,6 +133,7 @@ M.setcolor = function()
     WinSeparator = config.transparent_mode and { fg = colors.bg3, bg = nil } or { fg = colors.bg3, bg = colors.bg0 },
     WildMenu = { fg = colors.dblue, bg = colors.bg2, bold = config.bold },
     FloatWindow = { fg = colors.bg3, bg = colors.bg0 },
+    TermCursor = { fg = colors.lgreen, bg = colors.bg0 },
     Directory = { link = "GruvboxBlueBold" },
     Title = { link = "GruvboxGreenBold" },
     ErrorMsg = { fg = colors.bg0, bg = colors.red, bold = config.bold },
@@ -858,6 +859,10 @@ M.setcolor = function()
     CarbonPending = { link = "GruvboxYellow" },
     -- noice.nvim
     NoiceCursor = { link = "TermCursor" },
+    NoiceCmdlinePopupBorder = { link = "FloatWindow" },
+    NoiceCmdlinePopupBorderSearch = { link = "FloatWindow" },
+    NoiceCmdlinePopupTitle = { link = "TermCursor" },
+
     -- notify.nvim
     NotifyDEBUGBorder = { link = "GruvboxBlue" },
     NotifyDEBUGIcon = { link = "GruvboxBlue" },
