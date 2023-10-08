@@ -1,4 +1,5 @@
 local colors = {
+  none    = "NONE",
   bg0     = "#282828",
   bg1     = "#3c3836",
   bg2     = "#504945",
@@ -121,8 +122,8 @@ M.setcolor = function()
     CurSearch = { link = "IncSearch" },
     QuickFixLine = { fg = colors.bg0, bg = colors.yellow, bold = config.bold },
     Underlined = { fg = colors.dblue, underline = config.underline },
-    StatusLine = { fg = colors.bg0, bg = colors.bg0, reverse = config.inverse },
-    StatusLineNC = { fg = colors.bg0, bg = colors.bg0, reverse = config.inverse },
+    StatusLine = { fg = colors.none, bg = colors.none, reverse = config.inverse },
+    StatusLineNC = { fg = colors.none, bg = colors.noce, reverse = config.inverse },
     StatusLineGreen = { fg = colors.lgreen },
     StatusLineBlue = { fg = colors.blue },
     StatusLineYellow = { fg = colors.yellow },
