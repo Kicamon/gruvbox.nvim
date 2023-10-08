@@ -127,7 +127,7 @@ M.setcolor = function()
     StatusLineFile = { fg = colors.blue },
     StatusLineBranch = { fg = colors.violet },
     StatuslineNum = { fg = colors.lgreen },
-    StatuslineEncodeing = { fg = colors.magenta },
+    StatuslineEncodeing = { fg = colors.lgreen },
     WinBar = { fg = colors.fg4, bg = colors.bg0 },
     WinBarNC = { fg = colors.fg3, bg = colors.bg0 },
     WinSeparator = config.transparent_mode and { fg = colors.bg3, bg = nil } or { fg = colors.bg3, bg = colors.bg0 },
