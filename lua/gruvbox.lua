@@ -35,7 +35,7 @@ local colors = {
 local M = {}
 
 M.setcolor = function()
-  local config = require("gruvbox").config
+  local config = M.config
 
   vim.g.terminal_color_0 = colors.bg0
   vim.g.terminal_color_8 = colors.gray
