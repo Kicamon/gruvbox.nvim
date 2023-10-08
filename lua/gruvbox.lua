@@ -12,6 +12,7 @@ local colors = {
   red     = "#fb4934",
   dred    = "#cc241d",
   green   = "#b8bb26",
+  lgreen  = "#afd787",
   dgreen  = "#98971a",
   yellow  = "#fabd2f",
   dyellow = "#d79921",
@@ -24,6 +25,8 @@ local colors = {
   orange  = "#f0945d",
   dorange = "#d65d0e",
   gray    = "#928374",
+  violet  = "#a9a1e1",
+  magenta = "#c678dd",
 }
 
 local M = {}
@@ -120,6 +123,11 @@ M.setcolor = function()
     Underlined = { fg = colors.dblue, underline = config.underline },
     StatusLine = { fg = colors.blue, bg = colors.fg0, reverse = config.inverse },
     StatusLineNC = { fg = colors.blue, bg = colors.fg4, reverse = config.inverse },
+    StatusLineMode = { fg = colors.lgreen },
+    StatusLineFile = { fg = colors.blue },
+    StatusLineBranch = { fg = colors.violet },
+    StatuslineNum = { fg = colors.lgreen },
+    StatuslineEncodeing = { fg = colors.magenta },
     WinBar = { fg = colors.fg4, bg = colors.bg0 },
     WinBarNC = { fg = colors.fg3, bg = colors.bg0 },
     WinSeparator = config.transparent_mode and { fg = colors.bg3, bg = nil } or { fg = colors.bg3, bg = colors.bg0 },
