@@ -96,9 +96,9 @@ M.setcolor = function()
     GruvboxOrangeSign = config.transparent_mode and { fg = colors.orange, reverse = config.invert_signs }
         or { fg = colors.orange, reverse = config.invert_signs },
     GruvboxVermilionSign = config.transparent_mode and { fg = colors.vermilion, reverse = config.invert_signs }
-        or { fg = colors.orange, reverse = config.invert_signs },
+        or { fg = colors.cyan, reverse = config.invert_signs },
     GruvboxCyanSign = config.transparent_mode and { fg = colors.cyan, reverse = config.invert_signs }
-        or { fg = colors.orange, reverse = config.invert_signs },
+        or { fg = colors.cyan, reverse = config.invert_signs },
     GruvboxRedUnderline = { undercurl = config.undercurl, sp = colors.red },
     GruvboxGreenUnderline = { undercurl = config.undercurl, sp = colors.green },
     GruvboxYellowUnderline = { undercurl = config.undercurl, sp = colors.yellow },
