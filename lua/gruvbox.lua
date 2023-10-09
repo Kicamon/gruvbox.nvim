@@ -104,7 +104,7 @@ M.setcolor = function()
     GruvboxOrangeUnderline = { undercurl = config.undercurl, sp = colors.orange },
     Normal = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
     NormalFloat = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
-    FloatWinV = { fg = colors.fg0, bg = colors.bg0 },
+    FloatWin = { fg = colors.fg0, bg = colors.bg0 },
     FloatWinU = { fg = colors.fg0, bg = colors.bg1 },
     NormalNC = config.dim_inactive and { fg = colors.fg0, bg = colors.bg1 } or { link = "Normal" },
     CursorLine = { bg = colors.bg1 },
@@ -887,7 +887,7 @@ M.setcolor = function()
     TSRainbowViolet = { fg = colors.purple },
     TSRainbowCyan = { fg = colors.cyan },
     -- translator
-    TranslatorBorder = { link = "FloatWindowV" },
+    TranslatorBorder = { link = "FloatWindow" },
     BufferLineIndicatorSelected = { fg = colors.dblue2 },
     -- lazy
     LazyNormal = { link = "FloatWinU" }
