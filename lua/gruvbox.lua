@@ -134,8 +134,6 @@ M.setcolor = function()
     WinBarNC = { fg = colors.fg3, bg = colors.bg0 },
     WinSeparator = config.transparent_mode and { fg = colors.bg3, bg = nil } or { fg = colors.bg3, bg = colors.bg0 },
     WildMenu = { fg = colors.dblue, bg = colors.bg2, bold = config.bold },
-    FloatWindow = { fg = colors.bg3, bg = colors.bg0 },
-    -- TermCursor = { fg = colors.lgreen, bg = colors.bg0 },
     Directory = { link = "GruvboxBlueBold" },
     Title = { link = "GruvboxGreenBold" },
     ErrorMsg = { fg = colors.bg0, bg = colors.red, bold = config.bold },
@@ -861,8 +859,6 @@ M.setcolor = function()
     CarbonPending = { link = "GruvboxYellow" },
     -- noice.nvim
     NoiceCursor = { link = "TermCursor" },
-    NoiceCmdlinePopupBorder = { link = "FloatWindow" },
-    NoiceCmdlinePopupBorderSearch = { link = "FloatWindow" },
 
     -- notify.nvim
     NotifyDEBUGBorder = { link = "GruvboxBlue" },
@@ -889,7 +885,7 @@ M.setcolor = function()
     TSRainbowViolet = { fg = colors.purple },
     TSRainbowCyan = { fg = colors.cyan },
     -- translator
-    TranslatorBorder = { link = "FloatWindow" },
+    -- TranslatorBorder = { link = "FloatWindow" },
     BufferLineIndicatorSelected = { fg = colors.dblue2 },
   }
 
