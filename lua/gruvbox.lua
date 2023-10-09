@@ -10,7 +10,7 @@ local colors = {
   fg2     = "#d5c4a1",
   fg3     = "#bdae93",
   fg4     = "#a89984",
-  red     = "#ff461f",   -- 朱砂色
+  red     = "#ff461f", -- 朱砂色
   dred    = "#cc241d",
   green   = "#b8bb26",
   lgreen  = "#afd787",
@@ -19,7 +19,7 @@ local colors = {
   dyellow = "#d79921",
   blue    = "#5c94e6",
   dblue   = "#83a598",
-  cyan    = "#1fd8ff",   -- 青蓝色
+  cyan    = "#1fd8ff", -- 青蓝色
   purple  = "#d3869b",
   dpurple = "#b16286",
   aqua    = "#8ec07c",
@@ -27,8 +27,8 @@ local colors = {
   orange  = "#f0945d",
   dorange = "#d65d0e",
   gray    = "#928374",
-  violet  = "#a9a1e1",   -- 紫罗兰
-  magenta = "#c678dd",   -- 品红色
+  violet  = "#a9a1e1", -- 紫罗兰
+  magenta = "#c678dd", -- 品红色
 }
 
 local M = {}
@@ -105,6 +105,8 @@ M.setcolor = function()
     GruvboxOrangeUnderline = { undercurl = config.undercurl, sp = colors.orange },
     Normal = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
     NormalFloat = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
+    FloatWinV = { fg = colors.fg0, bg = colors.bg0 },
+    FloatWinU = { fg = colors.fg0, bg = colors.bg1 },
     NormalNC = config.dim_inactive and { fg = colors.fg0, bg = colors.bg1 } or { link = "Normal" },
     CursorLine = { bg = colors.bg1 },
     CursorColumn = { link = "CursorLine" },
@@ -885,8 +887,10 @@ M.setcolor = function()
     TSRainbowViolet = { fg = colors.purple },
     TSRainbowCyan = { fg = colors.cyan },
     -- translator
-    -- TranslatorBorder = { link = "FloatWindow" },
+    TranslatorBorder = { link = "FloatWindowV" },
     BufferLineIndicatorSelected = { fg = colors.dblue2 },
+    -- lazy
+    LazyNormal = { link = "FloatWinU" }
   }
 
   for group, hl in pairs(config.overrides) do
