@@ -863,7 +863,6 @@ M.setcolor = function()
     NoiceCursor = { link = "TermCursor" },
     NoiceCmdlinePopupBorder = { link = "FloatWindow" },
     NoiceCmdlinePopupBorderSearch = { link = "FloatWindow" },
-    NoiceCmdlinePopupTitle = { link = "TermCursor" },
 
     -- notify.nvim
     NotifyDEBUGBorder = { link = "GruvboxBlue" },
