@@ -110,7 +110,7 @@ M.setcolor = function()
     CursorLine = { bg = colors.bg1 },
     CursorColumn = { link = "CursorLine" },
     TabLineFill = { fg = colors.bg0, bg = colors.bg0, bold = config.bold },
-    TabLineTop = { fg = colors.green, bg = colors.bg0, bold = config.bold },
+    TabLineTop = { fg = colors.bg0, bg = colors.bg0, bold = config.bold },
     TabLineSel = { fg = colors.lgreen, bg = colors.bg0, bold = config.bold },
     TabLine = { fg = colors.bg1, bg = colors.bg0, bold = config.bold },
     MatchParen = { bg = colors.bg3, bold = config.bold },
