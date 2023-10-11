@@ -456,11 +456,11 @@ M.setcolor = function()
     gitcommitSelectedFile = { link = "GruvboxGreen" },
     gitcommitDiscardedFile = { link = "GruvboxRed" },
     -- gitsigns.nvim
-    GitSignsAdd = { link = "GruvboxRedSign" },
-    GitSignsChange = { link = "GruvboxYellowSign" },
+    GitSignsAdd = { link = "GruvboxYellowSign" },
+    GitSignsChange = { link = "GruvboxCyanSign" },
     GitSignsDelete = { link = "GruvboxGreenSign" },
-    GitSignsAddLn = { link = "GruvboxRedSign" },
-    GitSignsChangeLn = { link = "GruvboxYellowSign" },
+    GitSignsAddLn = { link = "GruvboxYellowSign" },
+    GitSignsChangeLn = { link = "GruvboxCyanSign" },
     GitSignsDeleteLn = { link = "GruvboxGreenSign" },
     -- termdebug
     debugPC = { bg = colors.faded_blue },
