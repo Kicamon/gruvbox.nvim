@@ -79,22 +79,14 @@ M.setcolor = function()
     GruvboxAquaBold = { fg = colors.aqua, bold = config.bold },
     GruvboxOrange = { fg = colors.orange },
     GruvboxOrangeBold = { fg = colors.orange, bold = config.bold },
-    GruvboxRedSign = config.transparent_mode and { fg = colors.red, reverse = config.invert_signs }
-        or { fg = colors.red, reverse = config.invert_signs },
-    GruvboxGreenSign = config.transparent_mode and { fg = colors.green, reverse = config.invert_signs }
-        or { fg = colors.green, reverse = config.invert_signs },
-    GruvboxYellowSign = config.transparent_mode and { fg = colors.yellow, reverse = config.invert_signs }
-        or { fg = colors.yellow, reverse = config.invert_signs },
-    GruvboxBlueSign = config.transparent_mode and { fg = colors.dblue, reverse = config.invert_signs }
-        or { fg = colors.blue, reverse = config.invert_signs },
-    GruvboxPurpleSign = config.transparent_mode and { fg = colors.purple, reverse = config.invert_signs }
-        or { fg = colors.purple, reverse = config.invert_signs },
-    GruvboxAquaSign = config.transparent_mode and { fg = colors.aqua, reverse = config.invert_signs }
-        or { fg = colors.aqua, reverse = config.invert_signs },
-    GruvboxOrangeSign = config.transparent_mode and { fg = colors.orange, reverse = config.invert_signs }
-        or { fg = colors.orange, reverse = config.invert_signs },
-    GruvboxCyanSign = config.transparent_mode and { fg = colors.cyan, reverse = config.invert_signs }
-        or { fg = colors.cyan, reverse = config.invert_signs },
+    GruvboxRedSign = { fg = colors.red, reverse = config.invert_signs },
+    GruvboxGreenSign = { fg = colors.green, reverse = config.invert_signs },
+    GruvboxYellowSign = { fg = colors.yellow, reverse = config.invert_signs },
+    GruvboxBlueSign = { fg = colors.blue, reverse = config.invert_signs },
+    GruvboxPurpleSign = { fg = colors.purple, reverse = config.invert_signs },
+    GruvboxAquaSign = { fg = colors.aqua, reverse = config.invert_signs },
+    GruvboxOrangeSign = { fg = colors.orange, reverse = config.invert_signs },
+    GruvboxCyanSign = { fg = colors.cyan, reverse = config.invert_signs },
     GruvboxRedUnderline = { undercurl = config.undercurl, sp = colors.red },
     GruvboxGreenUnderline = { undercurl = config.undercurl, sp = colors.green },
     GruvboxYellowUnderline = { undercurl = config.undercurl, sp = colors.yellow },
@@ -102,11 +94,11 @@ M.setcolor = function()
     GruvboxPurpleUnderline = { undercurl = config.undercurl, sp = colors.purple },
     GruvboxAquaUnderline = { undercurl = config.undercurl, sp = colors.aqua },
     GruvboxOrangeUnderline = { undercurl = config.undercurl, sp = colors.orange },
-    Normal = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
-    NormalFloat = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
+    Normal = { fg = colors.fg1, bg = colors.bg0 },
+    NormalFloat = { fg = colors.fg1, bg = colors.bg0 },
     FloatWin = { fg = colors.fg0, bg = colors.bg0 },
     FloatWinU = { fg = colors.fg0, bg = colors.bg1 },
-    NormalNC = config.dim_inactive and { fg = colors.fg0, bg = colors.bg1 } or { link = "Normal" },
+    NormalNC = { link = "Normal" },
     CursorLine = { bg = colors.bg1 },
     CursorColumn = { link = "CursorLine" },
     TabLineFill = { fg = colors.bg0, bg = colors.bg0, bold = config.bold },
@@ -134,7 +126,7 @@ M.setcolor = function()
     StatusLineYellow = { fg = colors.yellow, bg = colors.bg0 },
     WinBar = { fg = colors.fg4, bg = colors.bg0 },
     WinBarNC = { fg = colors.fg3, bg = colors.bg0 },
-    WinSeparator = config.transparent_mode and { fg = colors.bg3, bg = nil } or { fg = colors.bg3, bg = colors.bg0 },
+    WinSeparator = { fg = colors.bg3, bg = colors.bg0 },
     WildMenu = { fg = colors.dblue, bg = colors.bg2, bold = config.bold },
     Directory = { link = "GruvboxBlueBold" },
     Title = { link = "GruvboxGreenBold" },
@@ -144,9 +136,9 @@ M.setcolor = function()
     Question = { link = "GruvboxOrangeBold" },
     WarningMsg = { link = "GruvboxRedBold" },
     LineNr = { fg = colors.bg4 },
-    SignColumn = config.transparent_mode and { bg = nil } or { bg = colors.bg0 },
+    SignColumn = { bg = colors.bg0 },
     Folded = { fg = colors.gray, bg = colors.bg1, italic = config.italic.folds },
-    FoldColumn = config.transparent_mode and { fg = colors.gray, bg = nil } or { fg = colors.gray, bg = colors.bg1 },
+    FoldColumn = { fg = colors.gray, bg = colors.bg1 },
     Cursor = { reverse = config.inverse },
     vCursor = { link = "Cursor" },
     iCursor = { link = "Cursor" },
@@ -465,10 +457,10 @@ M.setcolor = function()
     gitcommitDiscardedFile = { link = "GruvboxRed" },
     -- gitsigns.nvim
     GitSignsAdd = { link = "GruvboxRedSign" },
-    GitSignsChange = { link = "GruvboxCyanSign" },
+    GitSignsChange = { link = "GruvboxYellowSign" },
     GitSignsDelete = { link = "GruvboxGreenSign" },
     GitSignsAddLn = { link = "GruvboxRedSign" },
-    GitSignsChangeLn = { link = "GruvboxCyanSign" },
+    GitSignsChangeLn = { link = "GruvboxYellowSign" },
     GitSignsDeleteLn = { link = "GruvboxGreenSign" },
     -- termdebug
     debugPC = { bg = colors.faded_blue },
@@ -859,8 +851,6 @@ M.setcolor = function()
     CarbonIndicator = { link = "GruvboxGray" },
     CarbonDanger = { link = "GruvboxRed" },
     CarbonPending = { link = "GruvboxYellow" },
-    -- noice.nvim
-    NoiceCursor = { link = "TermCursor" },
 
     -- notify.nvim
     NotifyDEBUGBorder = { link = "GruvboxBlue" },
@@ -888,7 +878,7 @@ M.setcolor = function()
     TSRainbowCyan = { fg = colors.cyan },
     -- translator
     TranslatorBorder = { link = "FloatWindow" },
-    BufferLineIndicatorSelected = { fg = colors.dblue2 },
+    BufferLineIndicatorSelected = { fg = colors.dblue },
     -- lazy
     LazyNormal = { link = "FloatWinU" }
   }
