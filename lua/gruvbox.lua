@@ -458,10 +458,10 @@ M.setcolor = function()
     -- gitsigns.nvim
     GitSignsAdd = { link = "GruvboxYellowSign" },
     GitSignsChange = { link = "GruvboxCyanSign" },
-    GitSignsDelete = { link = "GruvboxGreenSign" },
+    GitSignsDelete = { link = "GruvboxRedSign" },
     GitSignsAddLn = { link = "GruvboxYellowSign" },
     GitSignsChangeLn = { link = "GruvboxCyanSign" },
-    GitSignsDeleteLn = { link = "GruvboxGreenSign" },
+    GitSignsDeleteLn = { link = "GruvboxRedSign" },
     -- termdebug
     debugPC = { bg = colors.faded_blue },
     debugBreakpoint = { link = "GruvboxRedSign" },
