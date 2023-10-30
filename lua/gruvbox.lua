@@ -883,8 +883,7 @@ M.setcolor = function()
     LazyNormal = { link = "FloatWinU" },
     -- cmp
     PmenuSel = { bg = "#282C34", fg = "NONE" },
-    -- Pmenu = { fg = "#C5CDD9", bg = "#22252A" },
-    Pmenu = { link = "FloatWin" },
+    Pmenu = { fg = "#C5CDD9", bg = "#22252A" },
     PmenuSec = { link = "FloatWinU" },
 
     CmpItemAbbrDeprecated = { fg = "#7E8294", bg = "NONE", strikethrough = true },
