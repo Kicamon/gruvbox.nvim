@@ -885,7 +885,7 @@ M.setcolor = function()
     PmenuSel = { bg = "#282C34", fg = "NONE" },
     -- Pmenu = { fg = "#C5CDD9", bg = "#22252A" },
     Pmenu = { fg = colors.fg0, bg = "#22252A" },
-    PmenuSec = { link = "FloatWin" },
+    PmenuSec = { fg = colors.fg0, bg = "NONE" },
 
     CmpItemAbbrDeprecated = { fg = "#7E8294", bg = "NONE", strikethrough = true },
     CmpItemAbbrMatch = { fg = "#82AAFF", bg = "NONE", bold = true },
