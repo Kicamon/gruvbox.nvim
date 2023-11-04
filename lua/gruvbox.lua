@@ -881,6 +881,13 @@ M.setcolor = function()
     BufferLineIndicatorSelected = { fg = colors.dblue },
     -- lazy
     LazyNormal = { link = "FloatWinU" },
+    -- Simpline
+    StatusLineMode = { link = "StatusLineGreen" },
+    StatusLineFileInfo = { link = "StatusLineBlue" },
+    StatlsLineBranch = { link = "StatusLineBlue" },
+    StatlsLineLnum = { link = "StatusLineGreen" },
+    StatusLineReadOnly = { link = "StatusLineGreen" },
+    StatusLineEncoding = { link = "StatusLineGreen" },
     -- cmp
     PmenuSel = { bg = "#282C34", fg = "NONE" },
     -- Pmenu = { fg = "#C5CDD9", bg = "#22252A" },
