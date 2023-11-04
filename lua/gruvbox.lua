@@ -17,7 +17,7 @@ local colors = {
   yellow  = "#fabd2f",
   dyellow = "#d79921",
   lyellow = "#d8ff1f",
-  blue    = "#5c94e6",
+  blue    = "#88abda",
   dblue   = "#83a598",
   cyan    = "#1fd8ff", -- 青蓝色
   dcyan   = "#a59aca", -- 雪青色
@@ -28,7 +28,7 @@ local colors = {
   orange  = "#f0945d",
   dorange = "#d65d0e",
   gray    = "#928374",
-  lgray   = "#e6e6db",
+  lgray   = "#ebeee8",
   violet  = "#a9a1e1", -- 紫罗兰
   magenta = "#c678dd", -- 品红色
 }
@@ -463,10 +463,10 @@ M.setcolor = function()
     gitcommitDiscardedFile = { link = "GruvboxRed" },
     -- gitsigns.nvim
     GitSignsAdd = { link = "GruvboxLGraySign" },
-    GitSignsChange = { link = "GruvboxDCyanSign" },
+    GitSignsChange = { link = "GruvboxBlueSign" },
     GitSignsDelete = { link = "GruvboxRedSign" },
     GitSignsAddLn = { link = "GruvboxLGraySign" },
-    GitSignsChangeLn = { link = "GruvboxDCyanSign" },
+    GitSignsChangeLn = { link = "GruvboxBlueSign" },
     GitSignsDeleteLn = { link = "GruvboxRedSign" },
     -- termdebug
     debugPC = { bg = colors.faded_blue },
