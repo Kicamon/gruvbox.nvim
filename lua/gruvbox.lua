@@ -887,6 +887,8 @@ M.setcolor = function()
     BufferLineIndicatorSelected = { fg = colors.dblue },
     -- lazy
     LazyNormal = { link = "FloatWinU" },
+    -- Indent
+    MiniIndentscopeSymbol = {fg = "#504945"},
     -- Simpline
     StatusLineMode = { link = "StatusLineGreen" },
     StatusLineFileInfo = { link = "StatusLineBlue" },
