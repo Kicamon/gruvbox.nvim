@@ -93,6 +93,7 @@ M.setcolor = function()
     GruvboxCyanSign = { fg = colors.cyan, reverse = config.invert_signs },
     GruvboxDCyanSign = { fg = colors.dcyan, reverse = config.invert_signs },
     GruvboxLGraySign = { fg = colors.lgray, reverse = config.invert_signs },
+    GruvboxMagentaSign = { fg = colors.magenta, reverse = config.invert_signs },
     GruvboxRedUnderline = { undercurl = config.undercurl, sp = colors.red },
     GruvboxGreenUnderline = { undercurl = config.undercurl, sp = colors.green },
     GruvboxYellowUnderline = { undercurl = config.undercurl, sp = colors.yellow },
@@ -463,10 +464,10 @@ M.setcolor = function()
     gitcommitDiscardedFile = { link = "GruvboxRed" },
     -- gitsigns.nvim
     GitSignsAdd = { link = "GruvboxGreenSign" },
-    GitSignsChange = { link = "GruvboxBlueSign" },
+    GitSignsChange = { link = "GruvboxMagentaSign" },
     GitSignsDelete = { link = "GruvboxRedSign" },
     GitSignsAddLn = { link = "GruvboxGreenSign" },
-    GitSignsChangeLn = { link = "GruvboxBlueSign" },
+    GitSignsChangeLn = { link = "GruvboxMagentaSign" },
     GitSignsDeleteLn = { link = "GruvboxRedSign" },
     -- termdebug
     debugPC = { bg = colors.faded_blue },
@@ -888,7 +889,7 @@ M.setcolor = function()
     -- lazy
     LazyNormal = { link = "FloatWinU" },
     -- Indent
-    MiniIndentscopeSymbol = {fg = "#504945"},
+    MiniIndentscopeSymbol = { fg = "#504945" },
     -- Simpline
     StatusLineMode = { link = "StatusLineGreen" },
     StatusLineFileInfo = { link = "StatusLineBlue" },
