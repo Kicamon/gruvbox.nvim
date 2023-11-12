@@ -194,6 +194,17 @@ M.setcolor = function()
     SpellLocal = { link = "GruvboxAquaUnderline" },
     SpellRare = { link = "GruvboxPurpleUnderline" },
     Whitespace = { fg = colors.bg2 },
+    -- NetRw
+    netrwDir = { link = "GruvboxAqua" },
+    netrwClassify = { link = "GruvboxAqua" },
+    netrwLink = { link = "GruvboxGray" },
+    netrwSymLink = { link = "GruvboxFg1" },
+    netrwExe = { link = "GruvboxYellow" },
+    netrwComment = { link = "GruvboxGray" },
+    netrwList = { link = "GruvboxBlue" },
+    netrwHelpCmd = { link = "GruvboxAqua" },
+    netrwCmdSep = { link = "GruvboxFg3" },
+    netrwVersion = { link = "GruvboxGreen" },
     -- LSP Diagnostic
     DiagnosticError = { link = "GruvboxRed" },
     DiagnosticSignError = { link = "GruvboxRedSign" },
