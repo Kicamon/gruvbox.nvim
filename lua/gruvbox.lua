@@ -900,7 +900,7 @@ M.setcolor = function()
     -- lazy
     LazyNormal = { link = "FloatWinU" },
     -- Indent
-    MiniIndentscopeSymbol = { fg = "#504945" },
+    IndentLine = { fg = "#504945" },
     -- Simpline
     StatusLineMode = { link = "StatusLineGreen" },
     StatusLineFileInfo = { link = "StatusLineBlue" },
