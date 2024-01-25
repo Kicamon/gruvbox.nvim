@@ -108,6 +108,7 @@ M.setcolor = function()
     NormalNC = { link = "Normal" },
     CursorLine = { bg = colors.bg1 },
     CursorColumn = { link = "CursorLine" },
+    CursorWord = { underline = true },
     TabLineFill = { fg = colors.bg0, bg = colors.bg0, bold = config.bold },
     TabLineTop = { fg = colors.bg0, bg = colors.bg0, bold = config.bold },
     TabLineSel = { fg = colors.lgreen, bg = colors.bg0, bold = config.bold },
