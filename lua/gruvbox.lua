@@ -111,7 +111,7 @@ M.setcolor = function()
     CursorWord = { bg = '#454c50' },
     TabLineTop = { fg = colors.bg0, bg = colors.bg0, bold = config.bold },
     TabLineSel = { fg = colors.lgreen, bg = colors.bg0, bold = config.bold },
-    TabLine = { fg = colors.fg4, bg = colors.bg0, bold = config.bold },
+    TabLine = { fg = 'NONE', bg = 'NONE' },
     MatchParen = { bg = colors.bg3, bold = config.bold },
     ColorColumn = { bg = colors.bg1 },
     Conceal = { fg = colors.dblue },
