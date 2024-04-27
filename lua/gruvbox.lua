@@ -954,7 +954,7 @@ M.setcolor = function()
     CmpItemKindColor = { fg = "#D8EEEB", bg = "#58B5A8" },
     CmpItemKindTypeParameter = { fg = "#D8EEEB", bg = "#58B5A8" },
 
-    MiniIndentscopeSymbol = { fg = '#98971a', bg = "NONE" },
+    MiniIndentscopeSymbol = { fg = '#afd787', bg = "NONE" },
   }
 
   for group, hl in pairs(config.overrides) do
