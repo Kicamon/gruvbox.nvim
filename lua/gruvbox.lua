@@ -38,22 +38,22 @@ local M = {}
 M.setcolor = function()
   local config = M.config
 
-  vim.g.terminal_color_0 = colors.bg0
-  vim.g.terminal_color_8 = colors.gray
-  vim.g.terminal_color_1 = colors.dred
-  vim.g.terminal_color_9 = colors.red
-  vim.g.terminal_color_2 = colors.dgreen
-  vim.g.terminal_color_10 = colors.green
-  vim.g.terminal_color_3 = colors.dyellow
-  vim.g.terminal_color_11 = colors.yellow
-  vim.g.terminal_color_4 = colors.dblue
-  vim.g.terminal_color_12 = colors.dblue
-  vim.g.terminal_color_5 = colors.dpurple
-  vim.g.terminal_color_13 = colors.purple
-  vim.g.terminal_color_6 = colors.daqua
-  vim.g.terminal_color_14 = colors.aqua
-  vim.g.terminal_color_7 = colors.fg4
-  vim.g.terminal_color_15 = colors.fg1
+  -- vim.g.terminal_color_0 = colors.bg0
+  -- vim.g.terminal_color_8 = colors.gray
+  -- vim.g.terminal_color_1 = colors.dred
+  -- vim.g.terminal_color_9 = colors.red
+  -- vim.g.terminal_color_2 = colors.dgreen
+  -- vim.g.terminal_color_10 = colors.green
+  -- vim.g.terminal_color_3 = colors.dyellow
+  -- vim.g.terminal_color_11 = colors.yellow
+  -- vim.g.terminal_color_4 = colors.dblue
+  -- vim.g.terminal_color_12 = colors.dblue
+  -- vim.g.terminal_color_5 = colors.dpurple
+  -- vim.g.terminal_color_13 = colors.purple
+  -- vim.g.terminal_color_6 = colors.daqua
+  -- vim.g.terminal_color_14 = colors.aqua
+  -- vim.g.terminal_color_7 = colors.fg4
+  -- vim.g.terminal_color_15 = colors.fg1
 
   local groups = {
     -- Base groups
@@ -999,7 +999,6 @@ function M.setup(config)
     )
     config.italic = M.config.italic
   end
-  M.config = vim.tbl_deep_extend("force", M.config, config or {})
 end
 
 M.load = function()
