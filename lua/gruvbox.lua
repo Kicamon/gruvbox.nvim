@@ -910,7 +910,7 @@ M.setcolor = function()
     StatusLineFileInfo = { fg = colors.blue },
     StatlsLineBranch = { fg = colors.blue },
     StatusLineReadOnly = { fg = colors.lgreen },
-    StatusLineLsp = { link = " fg = colors.violet " },
+    StatusLineLsp = { fg = colors.violet },
     StatusLineEncoding = { fg = colors.lgreen },
     StatlsLineLnum = { fg = colors.lgreen },
     -- cmp
