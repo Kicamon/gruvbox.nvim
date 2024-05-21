@@ -903,16 +903,16 @@ M.setcolor = function()
     -- lazy
     LazyNormal = { link = "FloatWinU" },
     -- Indent
-    IndentLine = { fg = "#504945" },
+    IndentLine = { fg = colors.bg2 },
     IndentLineCurrent = { fg = colors.dcyan },
     -- Simpline
-    StatusLineMode = { link = "StatusLineGreen" },
-    StatusLineFileInfo = { link = "StatusLineBlue" },
-    StatlsLineBranch = { link = "StatusLineBlue" },
-    StatusLineReadOnly = { link = "StatusLineGreen" },
-    StatusLineLsp = { link = "StatusLineViolet" },
-    StatusLineEncoding = { link = "StatusLineGreen" },
-    StatlsLineLnum = { link = "StatusLineGreen" },
+    StatusLineMode = { fg = colors.lgreen },
+    StatusLineFileInfo = { fg = colors.blue },
+    StatlsLineBranch = { fg = colors.blue },
+    StatusLineReadOnly = { fg = colors.lgreen },
+    StatusLineLsp = { link = " fg = colors.violet " },
+    StatusLineEncoding = { fg = colors.lgreen },
+    StatlsLineLnum = { fg = colors.lgreen },
     -- cmp
     PmenuSel = { bg = "#282C34", fg = "NONE" },
     -- Pmenu = { fg = "#C5CDD9", bg = "#22252A" },
