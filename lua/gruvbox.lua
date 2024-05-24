@@ -905,7 +905,7 @@ M.setcolor = function()
     -- Simpline
     StatusLineMode = { fg = colors.lgreen },
     StatusLineFileInfo = { fg = colors.blue, bold = true },
-    StatlsLineBranch = { fg = colors.blue },
+    StatusLineBranch = { fg = colors.blue },
     StatusLineReadOnly = { fg = colors.lgreen },
     StatusLineLsp = { fg = colors.violet, bold = true },
     StatusLineEncoding = { fg = colors.lgreen },
