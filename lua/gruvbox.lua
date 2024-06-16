@@ -901,7 +901,7 @@ M.setcolor = function()
     LazyNormal = { link = "FloatWinU" },
     -- Indent
     IndentLine = { fg = colors.bg2 },
-    IndentLineCurrent = { fg = colors.dcyan },
+    IndentLineCurrent = { fg = "#E6E6FA" },
     -- Simpline
     StatusLineMode = { fg = colors.lgreen },
     StatusLineFileInfo = { fg = colors.blue, bold = true },
